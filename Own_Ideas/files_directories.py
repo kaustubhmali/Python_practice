@@ -2,14 +2,12 @@ import glob, os
 
 
 def select_dir(path):
-    try:
-        if not path:
-            print("Empty Directory")
-        else:
-            print(f"Path Loaded: {path}")
-            return os.chdir(path)
-    except ValueError:
-        print("Invalid Path: ")
+    if len(path) == 0:
+        print("Empty Directory")
+        exit(0)
+    else:
+        print(f"Path Loaded: {decor(path)}")
+        return os.chdir(path)
 
 
 def file_ext(extension):
@@ -42,7 +40,7 @@ def decor(func):
 
 selected_path = str(input("Enter your Directory Path: "))
 
-print(f"Enter path for the directory: {decor(select_dir(selected_path))}")
+print(f"Enter path for the directory: {(select_dir(selected_path))}")
 
 print("""\nSelect the extensions in the Directory: 
 \n\t 1. exe
