@@ -6,5 +6,16 @@ def firstReverse(s):
     return string
 
 
+# Using reverse
+def secondReverse(s):
+    string = ""
+    for i in reversed(s):
+        string += i
+
+    return string
+
+
 # keep this function call here
 print(firstReverse("coderbyte"))
+print("\n")
+print(secondReverse("coderbyte"))

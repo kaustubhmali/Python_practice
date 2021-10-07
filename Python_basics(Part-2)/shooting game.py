@@ -29,8 +29,13 @@ a = Alien()
 
 while True:
     x = input()
-    m.hit(x)
-    a.hit(x)
     if x == 'exit':
+        break
+    elif x == 'gun':
+        m.hit()
+    elif x == 'laser':
+        a.hit()
+    else:
+        print("Invalid Input")
         break
 
