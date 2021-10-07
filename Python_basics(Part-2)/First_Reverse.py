@@ -15,7 +15,19 @@ def secondReverse(s):
     return string
 
 
+# Using negative index
+def thirdReverse(s):
+    string = ""
+    i = 1
+    while i <= len(s):
+        string = string + s[-i]
+        i += 1
+    return string
+
+
 # keep this function call here
 print(firstReverse("coderbyte"))
 print("\n")
 print(secondReverse("coderbyte"))
+print("\n")
+print(thirdReverse("coderbyte"))
