@@ -21,5 +21,6 @@ def left_triangle():
         print(patt)
     return None
 
+
 print(right_triangle())
 print(left_triangle())
