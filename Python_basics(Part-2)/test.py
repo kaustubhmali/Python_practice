@@ -1,5 +1,5 @@
 # Multiple inputs.
-import antigravity
+#import antigravity
 # x, y = input("Enter two number: ").split()
 # print("Number of boys: ", x)
 # print("Number of girls: ", y)
@@ -17,10 +17,28 @@ import antigravity
 
 # code for disabling the softspace feature
 # antigravity
-print('G', 'F', 'G', sep='')
+# print('G', 'F', 'G', sep='')
+#
+# # for formatting a date
+# print('09', '12', '2016', sep='', end='\n')
+#
+# # another example
+# print('pratik', 'geeksforgeeks', sep='@')
 
-# for formatting a date
-print('09', '12', '2016', sep='', end='\n')
+# Formatting of Integers
+print("{0:b}".format(16))
 
-# another example
-print('pratik', 'geeksforgeeks', sep='@')
+string = "{:<15}{:<20}{:>10}{:>20}".format('Geeks', 'for', 'Geeks', 'test')
+print(string)
+
+integer = 12.34454565645
+print("The Value of Integer: %3.2f" % integer)
+print("The Value " + "%3.6f" %integer)
+
+print("{}")
+
+variable = 15
+# string = "As a string: %s" % (variable)
+# string = "As a float: %f" % (variable)
+string = "As a hexadecimal: %r" % (variable)
+print(string)
