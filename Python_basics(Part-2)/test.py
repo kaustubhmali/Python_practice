@@ -42,3 +42,4 @@ variable = 15
 # string = "As a float: %f" % (variable)
 string = "As a hexadecimal: %r" % (variable)
 print(string)
+
